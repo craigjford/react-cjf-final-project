@@ -1,0 +1,104 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "courseName": "Augusta National",
+        "address": "2604 Washington Rd",
+        "city": "Augusta",
+        "state": "Georgia",
+        "phoneNumber": "(706) 667-6000",
+        "course_url": "https://www.masters.com/images/course/720x405/H_hole12.jpg",
+        "likes": 0
+      },
+      {
+        "id": 2,
+        "courseName": "Pebble Beach",
+        "address": "2700 17 Mile Dr",
+        "city": "Pebble Beach",
+        "state": "California",
+        "phoneNumber": "(800) 654-9300",
+        "course_url": "https://www.pebblebeach.com/insidepebblebeach/play-7-of-the-worlds-greatest-golf-holes-at-pebble-beach-resorts/",
+        "likes": 0
+      },
+      {
+        "id": 3,
+        "courseName": "Baltusrol",
+        "address": "201 Shunpike Rd",
+        "city": "Springfield",
+        "state": "New Jersey",
+        "phoneNumber": "(973) 376-1900",
+        "course_url": "https://www.baltusrol.org/documents/10184/12674/Golf_Aerial.jpg",
+        "likes": 0
+      },
+      {
+        "id": 4,
+        "courseName": "Beltpage Golf Course",
+        "address": "99 Quaker Meeting House Rd",
+        "city": "Farmingdale",
+        "state": "New York",
+        "phoneNumber": "(516) 249-0700",
+        "course_url": "https://www.bethpagegolfcourse.com/wp-content/uploads/2018/09/bethapge-sand-2.jpg",
+        "likes": 0
+      },
+      {
+        "id": 5,
+        "courseName": "Medinah Country Club",
+        "address": "6N001 Medinah Rd",
+        "city": "Medinah",
+        "state": "Illinois",
+        "phoneNumber": "(630) 773-1700",
+        "course_url": "https://www.medinahcc.org/Images/Library/C2_Hole1.jpg",
+        "likes": 0
+      },
+      {
+        "id": 6,
+        "courseName": "Butler National",
+        "address": "2616 S York Road",
+        "city": "Oak Brook",
+        "state": "Illinois",
+        "phoneNumber": "(630) 990-3333",
+        "course_url": "https://butlernational.org/UploadedFiles/17.aspx",
+        "likes": 0
+      },
+      {
+        "id": 7,
+        "courseName": "Merion Golf Club",
+        "address": "450 Ardmore Ave",
+        "city": "Ardmore",
+        "state": "Pennsylvania",
+        "phoneNumber": "(610) 642-5600",
+        "course_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XIPIarkqhGqD5oITEmw3ogHaFp%26pid%3DApi%26h%3D160&f=1",
+        "likes": 0
+      },
+      {
+        "id": 8,
+        "courseName": "Kiawah Resort Golf Resort",
+        "address": "One Sanctuary Beach Drive",
+        "city": "Kiawah Island",
+        "state": "South Carolina",
+        "phoneNumber": "(800) 654-2924",
+        "course_url": "https://kiawahresort.com/wp-content/uploads/2018/09/Golf-Awards.jpg",
+        "likes": 0
+      },
+      {
+        "id": 9,
+        "courseName": "TPC Sawgrass",
+        "address": "110 Championship Way",
+        "city": "Ponte Vedra Beach",
+        "state": "Florida",
+        "phoneNumber": "(904) 273-3235",
+        "course_url": "https://www.tpcprestancia.com/Images/Library/stadium-course.jpg",
+        "likes": 0
+      },
+      {
+        "id": 10,
+        "courseName": "Pinehurst",
+        "address": "80 Carolina Vista",
+        "city": "Village of Pinehurst",
+        "state": "North Carolina",
+        "phoneNumber": "(844) 330-1669",
+        "course_url": "https://www.pinehurst.com/wp-content/uploads/2021/01/No4_Hole_2_2.jpg",
+        "likes": 0
+      }
+    ]
+  }
