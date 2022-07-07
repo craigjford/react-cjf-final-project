@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import NavBar from './NavBar';
@@ -7,6 +7,16 @@ import CourseForm from "./CourseForm";
 
 
 function App() {
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    fetch(" http://localhost:3001/courses")
+      .then((res) => res.json())
+      .then((data) => setCourses(data))
+  }, [])
+
+  console.log('courses = ', courses)
+  
   return (
     <div>
         <NavBar /> 
