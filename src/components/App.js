@@ -16,15 +16,6 @@ function App() {
       .then((data) => setCourses(data))
   }, [])
 
-  // useEffect(() => {
-  //   fetch(" http://localhost:3001/courses")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //         setCourses(data);
-  //         history.push("/courselist");
-  //     })
-  // }, [history])
-
   console.log('courses = ', courses)
 
   return (
