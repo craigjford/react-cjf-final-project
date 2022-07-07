@@ -1,13 +1,19 @@
 import React from 'react'
 import CourseItem from './CourseItem'
 
-function CourseList() {
+function CourseList({ courses }) {
+
+  const displayCourses = courses.map((course) => {
+    return (<CourseItem key={course.id} name={course.name} address={course.address} city={course.city} 
+                    state={course.state} phoneNumber={course.phoneNumber} url={course.url} />)
+  })
+
   return (
     <div>
-        <CourseItem />
-        <h1>CourseList</h1>
+        {displayCourses}
     </div>
   )
 }
 
 export default CourseList
+

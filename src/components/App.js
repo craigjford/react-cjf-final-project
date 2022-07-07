@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect } from 'react';
 import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import NavBar from './NavBar';
@@ -7,6 +7,7 @@ import CourseForm from "./CourseForm";
 
 
 function App() {
+  //const history = useHistory();
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
@@ -15,8 +16,17 @@ function App() {
       .then((data) => setCourses(data))
   }, [])
 
+  // useEffect(() => {
+  //   fetch(" http://localhost:3001/courses")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //         setCourses(data);
+  //         history.push("/courselist");
+  //     })
+  // }, [history])
+
   console.log('courses = ', courses)
-  
+
   return (
     <div>
         <NavBar /> 
@@ -25,7 +35,7 @@ function App() {
               <CourseForm />
            </Route>
            <Route exact path="/courselist">
-              <CourseList />
+              <CourseList courses={courses} />
            </Route>
            <Route exact path="/">
               <Home />
