@@ -17,10 +17,10 @@
                     <mxGeometry x="280" y="270" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="70" y="400" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="10" y="400" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="290" y="400" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="390" y="400" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="6">
                     <mxGeometry relative="1" as="geometry">
@@ -28,25 +28,31 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="510" y="400" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="580" y="400" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="510" y="560" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="580" y="560" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="App" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="310" y="285" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="13" value="NavBar" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="100" y="415" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="40" y="415" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="CourseForm" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="320" y="415" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="420" y="415" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="CourseList" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="540" y="415" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="610" y="415" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="CourseItem" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="540" y="575" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="610" y="575" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Home" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="415" width="60" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
