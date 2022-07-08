@@ -78,7 +78,7 @@
       "state": "South Carolina",
       "phoneNumber": "(800) 654-2924",
       "course_url": "https://kiawahresort.com/wp-content/uploads/2018/09/Golf-Awards.jpg",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 9,
@@ -88,7 +88,7 @@
       "state": "Florida",
       "phoneNumber": "(904) 273-3235",
       "course_url": "https://www.tpcprestancia.com/Images/Library/stadium-course.jpg",
-      "likes": 0
+      "likes": 2
     },
     {
       "id": 10,
@@ -119,6 +119,26 @@
       "course_url": "http://hominyhill.com/images/photo1.jpg",
       "likes": 0,
       "id": 12
+    },
+    {
+      "courseName": "Navesink Country Club",
+      "address": "11 Luffborrow",
+      "city": "Rumson",
+      "state": "New Jersey",
+      "phoneNumber": "732.568.8768",
+      "course_url": "https://images.squarespace-cdn.com/content/v1/5f77ee30fbb09c239c6ab9d8/1602260433455-S7C5LVWWRFSDTAGF211H/IMG_2156.jpg?format=750w",
+      "likes": 0,
+      "id": 14
+    },
+    {
+      "courseName": "Maple River",
+      "address": "11 Broadway",
+      "city": "Mapleton",
+      "state": "New Jersey",
+      "phoneNumber": "701.590-7323",
+      "course_url": "https://images.squarespace-cdn.com/content/v1/5f77ee30fbb09c239c6ab9d8/1602260433455-S7C5LVWWRFSDTAGF211H/IMG_2156.jpg?format=750w",
+      "likes": 3,
+      "id": 15
     }
   ]
 }

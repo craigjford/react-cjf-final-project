@@ -7,7 +7,7 @@ import CourseForm from "./CourseForm";
 
 
 function App() {
-  //const history = useHistory();
+
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function App() {
 
   const handleSubmit = (formData) => {
      const newCourse = [...courses, formData] 
-     setCourses(newCourse)
+     setCourses(newCourse);
   }
 
   const handleDelete = (id) => {

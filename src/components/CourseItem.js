@@ -33,10 +33,10 @@ function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, li
             <h1>{name}</h1> 
             <img src={courseUrl} alt="Premium golf course" height="400px" width="400px"></img>
             <br></br>
-            <h3>{address}</h3>
-            <h3>{city}</h3>
-            <h3>{state}</h3>
-            <h3>{phoneNumber}</h3>
+            <h3>Address: {address}</h3>
+            <h3>City: {city}</h3>
+            <h3>State: {state}</h3>
+            <h3>Phone Number: {phoneNumber}</h3>
             <br></br>
             <button className="deletebtn" type="button" onClick={() => handleCourseDelete(id)}>Delete</button>
             <button className="likesbtn" type="button" onClick={() => handleCourseLike(id)}>Likes: {likes}</button>
