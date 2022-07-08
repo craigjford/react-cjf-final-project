@@ -8,7 +8,7 @@
       "state": "Georgia",
       "phoneNumber": "(706) 667-6000",
       "course_url": "https://www.masters.com/images/course/720x405/H_hole12.jpg",
-      "likes": 0
+      "likes": 2
     },
     {
       "id": 2,
@@ -48,7 +48,7 @@
       "state": "Illinois",
       "phoneNumber": "(630) 773-1700",
       "course_url": "https://www.medinahcc.org/Images/Library/C2_Hole1.jpg",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 6,

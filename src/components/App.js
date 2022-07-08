@@ -26,6 +26,18 @@ function App() {
       setCourses(filteredCourse)
   }
 
+  const handleUpdate = (updatedCourse) => {
+      const courseUpdatedLikeList = courses.map((course) => {
+         if (course.id === updatedCourse.id) {
+            return updatedCourse;
+         } else {
+            return course;
+         }
+      })
+
+      setCourses(courseUpdatedLikeList)
+  }
+
   console.log('courses = ', courses)
 
   return (
@@ -36,7 +48,7 @@ function App() {
               <CourseForm onFormSubmit={handleSubmit} />
            </Route>
            <Route exact path="/courselist">
-              <CourseList courses={courses} onDeleteCourse={handleDelete} />
+              <CourseList courses={courses} onDeleteCourse={handleDelete} onhandleCourseUpdate={handleUpdate} />
            </Route>
            <Route exact path="/">
               <Home />
