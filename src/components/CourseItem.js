@@ -3,8 +3,6 @@ import React, {useState} from 'react'
 function CourseItem({ name, address, city, state, phoneNumber, courseUrl, likes }) {
     const [count, setCount] = useState(likes)
 
-    console.log('in CourseItem - url = ', courseUrl)
-
     return (
         <div className="course-item">
             <h1>{name}</h1> 
@@ -16,7 +14,7 @@ function CourseItem({ name, address, city, state, phoneNumber, courseUrl, likes 
             <h3>{phoneNumber}</h3>
             <br></br>
             <button className="deletebtn" type="button">Delete</button>
-            <button className="likesbtn" type="button">Links: {count}</button>
+            <button className="likesbtn" type="button">Likes: {count}</button>
             <hr></hr>
         </div>
 

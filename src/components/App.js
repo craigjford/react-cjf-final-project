@@ -16,6 +16,11 @@ function App() {
       .then((data) => setCourses(data))
   }, [])
 
+  const handleSubmit = (formData) => {
+     const newCourse = [...courses, formData] 
+     setCourses(newCourse)
+  }
+
   console.log('courses = ', courses)
 
   return (
@@ -23,7 +28,7 @@ function App() {
         <NavBar /> 
         <Switch>
            <Route exact path="/courseform">
-              <CourseForm />
+              <CourseForm onFormSubmit={handleSubmit} />
            </Route>
            <Route exact path="/courselist">
               <CourseList courses={courses} />

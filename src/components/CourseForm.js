@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function CourseForm() {
+function CourseForm({ onFormSubmit }) {
   const [formData, setFormData] = useState({
     courseName: "",
     address: "",
@@ -24,9 +24,18 @@ function CourseForm() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
+    fetch("http://localhost:3001/courses", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData)
+    })    
+    onFormSubmit(formData);
 
 
-  }
+  }  
+
 
   return (
     <div className="course-form">
