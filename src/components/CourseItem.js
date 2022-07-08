@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, likes, onDeleteCourse }) {
-    const [count, setCount] = useState(likes)
  
     const handleCourseDelete = (id) => {
         fetch(`http://localhost:3001/courses/${id}`, {
@@ -9,6 +8,10 @@ function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, li
         })
         .then((res) => res.json())
         .then(onDeleteCourse(id))
+    }
+
+    const handleCourseLike = (id) => {
+        
     }
 
     return (
@@ -22,7 +25,7 @@ function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, li
             <h3>{phoneNumber}</h3>
             <br></br>
             <button className="deletebtn" type="button" onClick={() => handleCourseDelete(id)}>Delete</button>
-            <button className="likesbtn" type="button">Likes: {count}</button>
+            <button className="likesbtn" type="button" onClick={() => handleCourseLike(id)}>Likes: {likes}</button>
             <hr></hr>
         </div>
 
