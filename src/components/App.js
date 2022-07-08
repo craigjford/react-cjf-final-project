@@ -11,7 +11,7 @@ function App() {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    fetch(" http://localhost:3001/courses")
+    fetch("http://localhost:3001/courses")
       .then((res) => res.json())
       .then((data) => setCourses(data))
   }, [])
@@ -19,6 +19,11 @@ function App() {
   const handleSubmit = (formData) => {
      const newCourse = [...courses, formData] 
      setCourses(newCourse)
+  }
+
+  const handleDelete = (id) => {
+      const filteredCourse = courses.filter((course) => course.id !== id)
+      setCourses(filteredCourse)
   }
 
   console.log('courses = ', courses)
@@ -31,7 +36,7 @@ function App() {
               <CourseForm onFormSubmit={handleSubmit} />
            </Route>
            <Route exact path="/courselist">
-              <CourseList courses={courses} />
+              <CourseList courses={courses} onDeleteCourse={handleDelete} />
            </Route>
            <Route exact path="/">
               <Home />

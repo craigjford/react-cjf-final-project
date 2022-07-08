@@ -1,8 +1,16 @@
 import React, {useState} from 'react'
 
-function CourseItem({ name, address, city, state, phoneNumber, courseUrl, likes }) {
+function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, likes, onDeleteCourse }) {
     const [count, setCount] = useState(likes)
-    console.log("name = ", name) 
+ 
+    const handleCourseDelete = (id) => {
+        fetch(`http://localhost:3001/courses/${id}`, {
+            method: 'DELETE'
+        })
+        .then((res) => res.json())
+        .then(onDeleteCourse(id))
+    }
+
     return (
         <div className="course-item">
             <h1>{name}</h1> 
@@ -13,7 +21,7 @@ function CourseItem({ name, address, city, state, phoneNumber, courseUrl, likes 
             <h3>{state}</h3>
             <h3>{phoneNumber}</h3>
             <br></br>
-            <button className="deletebtn" type="button">Delete</button>
+            <button className="deletebtn" type="button" onClick={() => handleCourseDelete(id)}>Delete</button>
             <button className="likesbtn" type="button">Likes: {count}</button>
             <hr></hr>
         </div>
