@@ -109,6 +109,26 @@
       "course_url": "https://www.pebblecreekgolfclub.com/images/galleries/course_tour/hole3.jpg",
       "likes": 0,
       "id": 11
+    },
+    {
+      "courseName": "Hominy Hill",
+      "address": "12 Route 537",
+      "city": "Colts Neck",
+      "state": "New Jersey",
+      "phoneNumber": "732.542.8573",
+      "course_url": "http://hominyhill.com/images/photo1.jpg",
+      "likes": 0,
+      "id": 12
+    },
+    {
+      "courseName": "Suneagles",
+      "address": "42 Clubway",
+      "city": "Eatontown",
+      "state": "New Jersey",
+      "phoneNumber": "732.633.8790",
+      "course_url": "https://www.suneaglesgolf.com/wp-content/uploads/2020/08/Sun-Eagles-photos_11-1-scaled.jpg",
+      "likes": 0,
+      "id": 13
     }
   ]
 }

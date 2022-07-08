@@ -33,7 +33,17 @@ function CourseForm({ onFormSubmit }) {
     })    
     onFormSubmit(formData);
 
+    const clearInput = {
+      courseName: "",
+      address: "",
+      city: "",
+      state: "",
+      phoneNumber: "",
+      course_url: "",
+      likes: 0
+    }
 
+    setFormData(clearInput);
   }  
 
 

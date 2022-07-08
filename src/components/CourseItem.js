@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 function CourseItem({ name, address, city, state, phoneNumber, courseUrl, likes }) {
     const [count, setCount] = useState(likes)
-
+    console.log("name = ", name) 
     return (
         <div className="course-item">
             <h1>{name}</h1> 
