@@ -11,7 +11,21 @@ function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, li
     }
 
     const handleCourseLike = (id) => {
-        
+        console.log('likes = ', likes)
+        let newLikes = likes + 1;
+        console.log('newLikes = ', newLikes)
+
+
+        // fetch(`http://localhost:3001/courses/${id}`, {
+        //     method: 'PATCH',
+        //     headers: { 'Content-Type': 'application/json'},
+        //     body: JSON.stringify({ 
+        //         likes: newLikes
+        //     }),
+        // })
+        //     .then((res) => res.json())
+        //     .then((updatedCourse) => onhandleCourseUpdate(updatedCourse));
+
     }
 
     return (
