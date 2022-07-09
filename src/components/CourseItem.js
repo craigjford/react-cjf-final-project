@@ -29,12 +29,14 @@ function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, li
     return (
         <div className="course-item">
             <h1>{name}</h1> 
-            <img src={courseUrl} alt="Premium golf course" height="400px" width="400px"></img>
+            <img className="courseimg" src={courseUrl} alt="Premium golf course" height="400px" width="400px"></img>
             <br></br>
-            <h3>Address: {address}</h3>
-            <h3>City: {city}</h3>
-            <h3>State: {state}</h3>
-            <h3>Phone Number: {phoneNumber}</h3>
+            <ul className="coursedata">
+                <li>Address: {address}</li>
+                <li>City: {city}</li>
+                <li>State: {state}</li>
+                <li>Phone Number: {phoneNumber}</li>
+            </ul>
             <br></br>
             <button className="deletebtn" type="button" onClick={() => handleCourseDelete(id)}>Delete</button>
             <button className="likesbtn" type="button" onClick={() => handleCourseLike(id)}>Likes: {likes}</button>
