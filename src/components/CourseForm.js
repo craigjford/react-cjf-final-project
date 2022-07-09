@@ -51,7 +51,7 @@ function CourseForm({ onFormSubmit }) {
     <div>
       <h1 className="formheader">Please Enter Your Favorite Golf Course</h1>
       <form className="course-form" onSubmit={handleSubmit}>
-        <label htmlFor="courseName">Course Name  </label>
+        <label id="formlabel" htmlFor="courseName">Course Name  </label>
           <input
             type="text"
             id="input-field"
@@ -60,7 +60,7 @@ function CourseForm({ onFormSubmit }) {
             onChange={handleChange}
             value={formData.courseName}
           />
-        <label htmlFor="address">Address </label>
+        <label id="formlabel" htmlFor="address">Address </label>
           <input
             type="text"
             id="input-field"
@@ -69,7 +69,7 @@ function CourseForm({ onFormSubmit }) {
             onChange={handleChange}
             value={formData.address}
           />
-        <label htmlFor="city">City </label>
+        <label id="formlabel" htmlFor="city">City </label>
           <input
             type="text"
             id="input-field"
@@ -78,7 +78,7 @@ function CourseForm({ onFormSubmit }) {
             onChange={handleChange}
             value={formData.city}
           />
-        <label htmlFor="state">State </label>
+        <label id="formlabel" htmlFor="state">State </label>
           <input
             type="text"
             id="input-field"
@@ -87,7 +87,7 @@ function CourseForm({ onFormSubmit }) {
             onChange={handleChange}
             value={formData.state}
           />
-        <label htmlFor="phoneNumber">Phone Number </label>
+        <label id="formlabel" htmlFor="phoneNumber">Phone Number </label>
           <input
             type="text"
             id="input-field"
@@ -96,7 +96,7 @@ function CourseForm({ onFormSubmit }) {
             onChange={handleChange}
             value={formData.phoneNumber}
           />
-        <label htmlFor="course_url">Course Image </label>
+        <label id="formlabel" htmlFor="course_url">Course Image </label>
           <input
             type="text"
             id="input-field"
@@ -105,7 +105,7 @@ function CourseForm({ onFormSubmit }) {
             value={formData.course_url}
             onChange={handleChange}
           />
-        <button type="submit">Submit</button>
+        <button type="submit" className="submitbtn">Submit</button>
       </form>
     </div>
   );
