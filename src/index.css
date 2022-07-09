@@ -80,27 +80,14 @@ li {
     margin-left: 300px;
   }
 
-.course-form {
-    border-bottom: 2px solid var(darkgreen);
-    border-top: 2px solid var(darkgreen);
-    padding: 1rem 0;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    gap: 1rem;
+#input-field {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid darkgreen;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-  
-.course-form button {
-    background: darkgreen;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-  
-.course-form label {
-    font-size: 0.8em;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
+
+

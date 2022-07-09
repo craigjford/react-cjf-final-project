@@ -54,6 +54,7 @@ function CourseForm({ onFormSubmit }) {
         <label htmlFor="courseName">Course Name  </label>
           <input
             type="text"
+            id="input-field"
             name="courseName"
             required
             onChange={handleChange}
@@ -62,6 +63,7 @@ function CourseForm({ onFormSubmit }) {
         <label htmlFor="address">Address </label>
           <input
             type="text"
+            id="input-field"
             name="address"
             required
             onChange={handleChange}
@@ -70,6 +72,7 @@ function CourseForm({ onFormSubmit }) {
         <label htmlFor="city">City </label>
           <input
             type="text"
+            id="input-field"
             name="city"
             required
             onChange={handleChange}
@@ -78,6 +81,7 @@ function CourseForm({ onFormSubmit }) {
         <label htmlFor="state">State </label>
           <input
             type="text"
+            id="input-field"
             name="state"
             required
             onChange={handleChange}
@@ -86,6 +90,7 @@ function CourseForm({ onFormSubmit }) {
         <label htmlFor="phoneNumber">Phone Number </label>
           <input
             type="text"
+            id="input-field"
             name="phoneNumber"
             required
             onChange={handleChange}
@@ -94,6 +99,7 @@ function CourseForm({ onFormSubmit }) {
         <label htmlFor="course_url">Course Image </label>
           <input
             type="text"
+            id="input-field"
             name="course_url"
             required
             value={formData.course_url}
