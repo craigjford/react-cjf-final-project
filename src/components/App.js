@@ -7,7 +7,6 @@ import CourseForm from "./CourseForm";
 
 
 function App() {
-
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
@@ -48,7 +47,8 @@ function App() {
               <CourseForm onFormSubmit={handleSubmit} />
            </Route>
            <Route exact path="/courselist">
-              <CourseList courses={courses} onDeleteCourse={handleDelete} onhandleCourseUpdate={handleUpdate} />
+              <CourseList courses={courses} onDeleteCourse={handleDelete} 
+                           onhandleCourseUpdate={handleUpdate} />
            </Route>
            <Route exact path="/">
               <Home />

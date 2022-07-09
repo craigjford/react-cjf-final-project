@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+Phase 2 Project - Golf Courses
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Elements Used
+    •   Use the <BrowserRouter> component to enabled
+    •   Use the <Route> component to display different components based on the URL
+    •   Use the <NavBar> component to allow client-side navigation
+    •   Use the { useState } to enable keeping state for actions created bye CRUD activities
+    •   Use the { useEffect } to enable application to get all course upon loading the application
+    •   Use fetch with the methods GET, POST, DELETE and PATCH to keep the db.json in sync with state
+    •   Handcrafted a db.json file from scratch.
+    •   Utilized prop components and well as callbacks to enable Reverse Information Flow
 
-## Available Scripts
+Introduction
 
-In the project directory, you can run:
+This project builds out a Golf Course application that has routes for a Home Page, CourseForm Page and CourseList Page. Our goal is to provide routes and links for these 3 pages.  Additionally, the project will contain the following Pages to enable CRUD activity to keep JSON file and State in sync.
+    •   App Page
+    •   NavBar Page
+    •   Home Page
+    •   CourseForm Page
+    •   CourseList Page
+    •   CourseItem Page
 
-### `npm start`
+*** Please refer to course.drawio file to get a wireframe of project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Our src folder contains the following:
+src/
+├── index.js
+└── components/
+    ├── App.js
+    ├── NavBar.js
+    ├── Home.js
+    ├── CourseForm.js
+    ├── CourseList.js
+    └── NavBar.js
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+index.js
+Our index.js file is completed for us. It loads the BrowserRouter component from React Router, as well as App as the top level component.
 
-### `npm run build`
+Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+App
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Inside this component, we will render our NavBar and three React Router Route components with the following paths:
+    •   /courseform: should render the CourseForm component
+    •   /courselist: should render the CourseList component
+    •   /: should render the Home component
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This component will keep state for our golf course list using the useState hook
+This component will do an initial fetch to get all of golf courses using the useEffect hook. It will only run once upon loading.
+The component will contain final functions from callbacks for Submit, Delete and Update which will update state to keep in sync with JSON file.  In the JSX in the Routes, CourseForm will pass a prop that will be a callback to handle Submit, CourseList will pass props that contains the list of courses and a Delete callback prop and a Update callback prop
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+NavBar
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This component will render three NavLink components. They will be for /,  /courseform,  /courselist /
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Home
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This component will render the text Home Page in an <h1>.
 
-## Learn More
+CourseForm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This component will have input fields for course name, address, city, state, phone number and an image from the course.  The will be controlled input fields kept in state using useState hook.  The form will make the fetch POST and the use passed callback to finish Submit process.
+CourseList
+This component will take in props for list of golf courses and delete and update callbacks.  This component will render a list of golf courses.  It will do this by creating an CourseItem for each course.  It will pass props with courses destructured as well as the delete and update callbacks passed in as props. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+CourseItem
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This component will render course name, an image of the course, address, city, state and phone number of which all were passed in as props.  Each course will have a Delete and Likes button.  The component will handle fetch DELETE and fetch PATCH in event listeners.  Each will uses appropriate delete and update callback passed in as props and will make its way to the App component.

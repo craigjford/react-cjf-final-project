@@ -8,7 +8,7 @@
       "state": "Georgia",
       "phoneNumber": "(706) 667-6000",
       "course_url": "https://www.masters.com/images/course/720x405/H_hole12.jpg",
-      "likes": 2
+      "likes": 3
     },
     {
       "id": 2,
@@ -117,7 +117,7 @@
       "state": "New Jersey",
       "phoneNumber": "732.542.8573",
       "course_url": "http://hominyhill.com/images/photo1.jpg",
-      "likes": 0,
+      "likes": 2,
       "id": 12
     },
     {
@@ -131,14 +131,14 @@
       "id": 14
     },
     {
-      "courseName": "Maple River",
-      "address": "11 Broadway",
-      "city": "Mapleton",
-      "state": "New Jersey",
-      "phoneNumber": "701.590-7323",
-      "course_url": "https://images.squarespace-cdn.com/content/v1/5f77ee30fbb09c239c6ab9d8/1602260433455-S7C5LVWWRFSDTAGF211H/IMG_2156.jpg?format=750w",
-      "likes": 3,
-      "id": 15
+      "courseName": "Village Greens",
+      "address": "345 Ogden Ave",
+      "city": "Woodridge",
+      "state": "Illinois",
+      "phoneNumber": "201.583.2900",
+      "course_url": "https://www.villagegreensgolf.com/images/holes/VGW-Overview.jpg",
+      "likes": 0,
+      "id": 16
     }
   ]
 }
