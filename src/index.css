@@ -6,6 +6,12 @@ body {
 
 h1, h2, h3 {color: darkgreen}
 
+.navbar {
+    padding: 30px, 250px, 60px, 250px;
+    margin: 1rem 2rem;
+    margin-left: 400px;
+}
+
 .coursedata {color: darkgreen}
 
 .course-item {
