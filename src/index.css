@@ -24,6 +24,20 @@ h1, h2, h3 {color: darkgreen}
     box-shadow: 3px 6px maroon;
 }
 
+h1.homehdr {
+    text-align: center;
+}
+
+article {
+    text-align: center;
+    color: darkgreen;
+}
+
+p {
+    margin-left: 300px;
+    max-width: 500px 
+}
+
 h1.coursename {
     text-align: center;
     padding: 10px;
