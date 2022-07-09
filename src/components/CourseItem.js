@@ -29,7 +29,7 @@ function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, li
     return (
         <div className="course-item">
             <h1>{name}</h1> 
-            <img className="courseimg" src={courseUrl} alt="Premium golf course" height="400px" width="400px"></img>
+            <img className="courseimg" src={courseUrl} alt="Premium golf course" height="500px" width="500px"></img>
             <br></br>
             <ul className="coursedata">
                 <li>Address: {address}</li>
