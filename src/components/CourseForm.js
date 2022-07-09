@@ -49,7 +49,7 @@ function CourseForm({ onFormSubmit }) {
 
   return (
     <div className="course-form">
-      <h1>Please Enter Your Favorite Golf Course</h1>
+      <h1 className="formhdr">Please Enter Your Favorite Golf Course</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="courseName">Course Name </label>
           <input
