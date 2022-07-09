@@ -48,10 +48,10 @@ function CourseForm({ onFormSubmit }) {
 
 
   return (
-    <div className="course-form">
-      <h1 className="formhdr">Please Enter Your Favorite Golf Course</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="courseName">Course Name </label>
+    <div>
+      <h1 className="formheader">Please Enter Your Favorite Golf Course</h1>
+      <form className="course-form" onSubmit={handleSubmit}>
+        <label htmlFor="courseName">Course Name  </label>
           <input
             type="text"
             name="courseName"
@@ -91,7 +91,7 @@ function CourseForm({ onFormSubmit }) {
             onChange={handleChange}
             value={formData.phoneNumber}
           />
-        <label htmlFor="course_url">Avatar Image</label>
+        <label htmlFor="course_url">Course Image </label>
           <input
             type="text"
             name="course_url"
