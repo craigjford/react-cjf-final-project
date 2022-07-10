@@ -40,8 +40,8 @@ function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, li
                 </ul>
             </div>
             <br></br>
-            <button className="deletebtn" type="button" onClick={() => handleCourseDelete(id)}>Delete</button>
-            <button className="likesbtn" type="button" onClick={() => handleCourseLike(id)}>Likes: {likes}</button>
+            <button className="item-btn" type="button" onClick={() => handleCourseDelete(id)}>Delete</button>
+            <button className="item-btn" type="button" onClick={() => handleCourseLike(id)}>Likes: {likes}</button>
         </div>
 
     )
