@@ -38,6 +38,7 @@ function App() {
   }
 
   console.log('courses = ', courses)
+  console.log('in app - checking Github')
 
   return (
     <div>
