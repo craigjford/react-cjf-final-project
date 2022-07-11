@@ -61,11 +61,16 @@ Home
 
 This component will render the text Home Page in an <h1>.
 
+
 CourseForm
 
 This component will have input fields for course name, address, city, state, phone number and an image from the course.  The will be controlled input fields kept in state using useState hook.  The form will make the fetch POST and the use passed callback to finish Submit process.
+
+
 CourseList
+
 This component will take in props for list of golf courses and delete and update callbacks.  This component will render a list of golf courses.  It will do this by creating an CourseItem for each course.  It will pass props with courses destructured as well as the delete and update callbacks passed in as props. 
+
 
 CourseItem
 
