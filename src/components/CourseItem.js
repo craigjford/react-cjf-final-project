@@ -1,7 +1,6 @@
 import React from 'react'
 
 function CourseItem({ id, name, address, city, state, phoneNumber, courseUrl, likes, onDeleteCourse, onhandleCourseUpdate }) {
-    console.log('in item - id = ', id)
     
     const handleCourseDelete = (id) => {
         fetch(`http://localhost:3001/courses/${id}`, {

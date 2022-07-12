@@ -23,7 +23,7 @@ function CourseForm({ onFormSubmit }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
+    
     fetch("http://localhost:3001/courses", {
       method: "POST",
       headers: {

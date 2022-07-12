@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router-dom";
 import Home from "./Home";
 import NavBar from './NavBar';
 import CourseList from './CourseList';
@@ -8,6 +8,7 @@ import CourseForm from "./CourseForm";
 
 function App() {
   const [courses, setCourses] = useState([]);
+  const history = useHistory();
 
   useEffect(() => {
     fetch("http://localhost:3001/courses")
@@ -18,6 +19,7 @@ function App() {
   const handleSubmit = (formData) => {
      const newCourse = [...courses, formData] 
      setCourses(newCourse);
+     history.push("/courselist")
   }
 
   const handleDelete = (id) => {
@@ -36,8 +38,6 @@ function App() {
 
       setCourses(courseUpdatedLikeList)
   }
-
-  console.log('courses = ', courses)
 
   return (
     <div>
