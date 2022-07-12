@@ -8,7 +8,7 @@
       "state": "Georgia",
       "phoneNumber": "(706) 667-6000",
       "course_url": "https://www.masters.com/images/course/720x405/H_hole12.jpg",
-      "likes": 3
+      "likes": 4
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "state": "California",
       "phoneNumber": "(800) 654-9300",
       "course_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.VSBMHzNCrLrY4l0QTrdpJQHaFf%26pid%3DApi&f=1",
-      "likes": 0
+      "likes": 2
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "state": "New Jersey",
       "phoneNumber": "(973) 376-1900",
       "course_url": "https://www.baltusrol.org/documents/10184/12674/Golf_Aerial.jpg",
-      "likes": 0
+      "likes": 4
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "state": "New York",
       "phoneNumber": "(516) 249-0700",
       "course_url": "https://www.bethpagegolfcourse.com/wp-content/uploads/2018/09/bethapge-sand-2.jpg",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 5,
@@ -78,7 +78,7 @@
       "state": "South Carolina",
       "phoneNumber": "(800) 654-2924",
       "course_url": "https://kiawahresort.com/wp-content/uploads/2018/09/Golf-Awards.jpg",
-      "likes": 1
+      "likes": 2
     },
     {
       "id": 9,
@@ -107,7 +107,7 @@
       "state": "New Jersey",
       "phoneNumber": "732.320.7394",
       "course_url": "https://www.pebblecreekgolfclub.com/images/galleries/course_tour/hole3.jpg",
-      "likes": 0,
+      "likes": 1,
       "id": 11
     },
     {
@@ -117,7 +117,7 @@
       "state": "New Jersey",
       "phoneNumber": "732.542.8573",
       "course_url": "http://hominyhill.com/images/photo1.jpg",
-      "likes": 3,
+      "likes": 4,
       "id": 12
     },
     {
@@ -127,20 +127,10 @@
       "state": "New Jersey",
       "phoneNumber": "732.568.8768",
       "course_url": "https://images.squarespace-cdn.com/content/v1/5f77ee30fbb09c239c6ab9d8/1602260433455-S7C5LVWWRFSDTAGF211H/IMG_2156.jpg?format=750w",
-      "likes": 0,
+      "likes": 2,
       "id": 14
     },
     {
-      "courseName": "Village Greens",
-      "address": "345 Ogden Ave",
-      "city": "Woodridge",
-      "state": "Illinois",
-      "phoneNumber": "201.583.2900",
-      "course_url": "https://www.villagegreensgolf.com/images/holes/VGW-Overview.jpg",
-      "likes": 0,
-      "id": 16
-    },
-    {
       "courseName": "Pebble Creek",
       "address": "15 Palomino Pl",
       "city": "Red Bank",
@@ -148,17 +138,7 @@
       "phoneNumber": "7326877835",
       "course_url": "https://www.pebblecreekgolfclub.com/images/galleries/course_tour/hole3.jpg",
       "likes": 0,
-      "id": 17
-    },
-    {
-      "courseName": "Pebble Creek",
-      "address": "15 Palomino Pl",
-      "city": "Red Bank",
-      "state": "NJ",
-      "phoneNumber": "7326877835",
-      "course_url": "https://www.pebblecreekgolfclub.com/images/galleries/course_tour/hole3.jpg",
-      "likes": 0,
-      "id": 18
+      "id": 15
     }
   ]
 }
