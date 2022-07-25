@@ -101,16 +101,6 @@
       "likes": 0
     },
     {
-      "courseName": "Pebble Creek",
-      "address": "11 Clubway",
-      "city": "Cols Neck",
-      "state": "New Jersey",
-      "phoneNumber": "732.320.7394",
-      "course_url": "https://www.pebblecreekgolfclub.com/images/galleries/course_tour/hole3.jpg",
-      "likes": 1,
-      "id": 11
-    },
-    {
       "courseName": "Hominy Hill",
       "address": "12 Route 537",
       "city": "Colts Neck",
@@ -131,6 +121,16 @@
       "id": 14
     },
     {
+      "courseName": "Navesink Country Club",
+      "address": "15 Palomino Pl",
+      "city": "Red Bank",
+      "state": "NJ",
+      "phoneNumber": "7326877835",
+      "course_url": "http://hominyhill.com/images/photo1.jpg",
+      "likes": 0,
+      "id": 16
+    },
+    {
       "courseName": "Pebble Creek",
       "address": "15 Palomino Pl",
       "city": "Red Bank",
@@ -138,7 +138,7 @@
       "phoneNumber": "7326877835",
       "course_url": "https://www.pebblecreekgolfclub.com/images/galleries/course_tour/hole3.jpg",
       "likes": 0,
-      "id": 15
+      "id": 17
     }
   ]
 }
